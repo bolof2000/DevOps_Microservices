@@ -4,7 +4,7 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=rhotimee/ml-api
+dockerpath=bolof2000/ml-api
 
 # Step 2
 # Run the Docker Hub container with kubernetes
@@ -20,5 +20,5 @@ kubectl get pods
 # Forward the container port to a host
 kubectl expose deployment ml-api --type=LoadBalancer --port=80
 
-# Open the service 
+# Open the service
 minikube service ml-api
